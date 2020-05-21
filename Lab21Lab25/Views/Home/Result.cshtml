@@ -1,0 +1,13 @@
+﻿@model Movie
+@{
+    var dateOnlyString = Model.Year.ToShortDateString();
+}
+<h1>Summary</h1>
+<h2>@Model.Title has been registered</h2>
+
+<p>ID: @Model.ID</p>
+<p>Title: @Model.Title</p>
+<p>Genre: @Model.Genre</p>
+<p>Year: @dateOnlyString</p>
+<p>Actors: @Model.Actors</p>
+<p>Directors: @Model.Directors</p>

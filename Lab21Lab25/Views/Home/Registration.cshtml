@@ -1,0 +1,41 @@
+﻿@model Movie
+<h1>Registration</h1>
+
+@*<div asp-validation-summary="All" class="text-danger"></div>*@
+
+<form action="Result" method="get">
+    <p>ID</p>
+    @*@Html.Editor("ID")*@
+    <input type="number" name="ID" required oninvalid="this.setCustomValidity('Please enter a valid ID number')"
+    oninput="this.setCustomValidity('')" />
+
+    <p>Title</p>
+    @*@Html.Editor("Title")*@
+    <input minlength="1" maxlength="50" type="text" name="Title" required oninvalid="this.setCustomValidity('Please enter a valid title (50 characters max)')"
+    oninput="this.setCustomValidity('')" />
+    <p>Genre</p>
+    @*@Html.Editor("Genre")*@
+    <label for="Genre">Genre:</label>
+    <select id="Genre" name="Genre">
+        <option value="Comedy">Comedy</option>
+        <option value="Horror">Horror</option>
+        <option value="Drama">Drama</option>
+        <option value="Animated">Animated</option>
+        <option value="Romance">Romance</option>
+        <option value="Documentary">Documentary</option>
+    </select>
+    @*<input type="" name="Genre" />*@
+    <p>Year</p>
+    @*@Html.Editor("Year")*@
+    <input type="date" name="Year" value="yyyy-mm-dd" min="1880-01-01" max="2031-01-01" required oninvalid="this.setCustomValidity('Please enter a valid date (after 1880)')"
+    oninput="this.setCustomValidity('')" />
+    <p>Actors</p>
+    @*@Html.Editor("Actors")*@
+    <input type="text" name="Actors" required oninvalid="this.setCustomValidity('Please enter at least one actor name')"
+    oninput="this.setCustomValidity('')" />
+    <p>Directors</p>
+    @*@Html.Editor("Directors")*@
+    <input type="text" name="Directors" required oninvalid="this.setCustomValidity('Please enter at least one director name')"
+    oninput="this.setCustomValidity('')" />
+    <input type="submit" />
+</form>
