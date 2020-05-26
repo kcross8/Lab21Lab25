@@ -1,0 +1,31 @@
+﻿@model List<Movie>
+@{
+    ViewData["Title"] = "MovieList";
+}
+
+<h1>Movie List</h1>
+
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Genre</th>
+        <th>Year</th>
+        <th>Actors</th>
+        <th>Directors</th>
+    </tr>
+    @foreach (var film in Model)
+    {
+        var dateOnlyString = film.Year.ToShortDateString();
+    
+    <tr>
+        <td>@film.Title</td>
+        <td>@film.Genre</td>
+        <td>@dateOnlyString</td>
+        <td>@film.Actors</td>
+        <td>@film.Directors</td>
+        <td>
+            <a href="SelectMovies?title=@film.Title">Add to Cart.</a>
+        </td>
+    </tr>
+    }
+</table>

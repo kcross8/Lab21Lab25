@@ -110,3 +110,7 @@ C:\Users\kyle\source\repos\Lab21Lab25\Lab21Lab25\obj\Debug\netcoreapp3.1\Lab21La
 C:\Users\kyle\source\repos\Lab21Lab25\Lab21Lab25\obj\Debug\netcoreapp3.1\Lab21Lab25.genruntimeconfig.cache
 C:\Users\kyle\source\repos\Lab21Lab25\Lab21Lab25\obj\Debug\netcoreapp3.1\Razor\Views\Home\Registration.cshtml.g.cs
 C:\Users\kyle\source\repos\Lab21Lab25\Lab21Lab25\obj\Debug\netcoreapp3.1\Razor\Views\Home\Result.cshtml.g.cs
+C:\Users\kyle\source\repos\Lab21Lab25\Lab21Lab25\obj\Debug\netcoreapp3.1\Razor\Views\Home\Cart.cshtml.g.cs
+C:\Users\kyle\source\repos\Lab21Lab25\Lab21Lab25\obj\Debug\netcoreapp3.1\Razor\Views\Home\MovieList.cshtml.g.cs
+C:\Users\kyle\source\repos\Lab21Lab25\Lab21Lab25\obj\Debug\netcoreapp3.1\Razor\Views\Home\Receipt.cshtml.g.cs
+C:\Users\kyle\source\repos\Lab21Lab25\Lab21Lab25\obj\Debug\netcoreapp3.1\Razor\Views\Home\ErrorPage.cshtml.g.cs

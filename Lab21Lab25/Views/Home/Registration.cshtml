@@ -3,7 +3,7 @@
 
 @*<div asp-validation-summary="All" class="text-danger"></div>*@
 
-<form action="Result" method="get">
+<form action="AddToSessionsList" method="get">
     <p>ID</p>
     @*@Html.Editor("ID")*@
     <input type="number" name="ID" required oninvalid="this.setCustomValidity('Please enter a valid ID number')"

@@ -1,0 +1,25 @@
+﻿@model List<Movie>
+
+@{
+    ViewData["Title"] = "Receipt";
+    double totalprice = 0;
+}
+<h1>Receipt</h1>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Price</th>
+    </tr>
+    @foreach (var film in Model)
+    {
+        totalprice += 6.99;
+        <tr>
+            <td>@film.Title</td>
+            <td>
+                $6.99
+            </td>            
+        </tr>
+    }
+</table>
+    <h2>Total: $@totalprice</h2>
+    <a href="ClearMovies">Clear cart of all movies.</a>
